@@ -1,0 +1,16 @@
+{
+  "fim_files": [
+    "config.json",
+    "cmd/agent/main.go",
+    "internal/fim/checker.go"
+  ],
+  "baseline_path": "baseline.json",
+  "log_file": "access.log",
+  "attack_signatures": [
+    "(\\=|%3D)('|\"|%27|%22)",
+    "(SELECT|INSERT|DELETE|UPDATE|DROP|UNION)",
+    "(\\.\\./|\\.\\.\\\\)",
+    "(<script>|javascript:)"
+  ],
+  "report_path": "report.json"
+}

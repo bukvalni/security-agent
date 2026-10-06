@@ -1,0 +1,35 @@
+{
+  "fim_result": {
+    "ok_files": [
+      "internal/fim/checker.go",
+      "cmd/agent/main.go",
+      "config.json"
+    ],
+    "modified_files": [],
+    "deleted_files": [],
+    "has_alerts": false
+  },
+  "log_report": {
+    "total_lines": 3,
+    "threats_count": 2,
+    "threats_by_ip": {
+      "10.0.0.5": 2
+    },
+    "events": [
+      {
+        "line_number": 2,
+        "ip": "10.0.0.5",
+        "matched_pattern": "(?i)(\\=|%3D)('|\"|%27|%22)",
+        "raw_line": "10.0.0.5 - - [10/May/2026:12:01:00 +0000] \"GET /login?user=' OR 1=1-- HTTP/1.1\" 500 512"
+      },
+      {
+        "line_number": 3,
+        "ip": "10.0.0.5",
+        "matched_pattern": "(?i)(\\.\\./|\\.\\.\\\\)",
+        "raw_line": "10.0.0.5 - - [10/May/2026:12:02:00 +0000] \"GET /download?file=../../etc/passwd HTTP/1.1\" 403 128"
+      }
+    ],
+    "has_alerts": true
+  },
+  "status": "ALERT"
+}

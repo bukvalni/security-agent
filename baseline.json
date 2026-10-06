@@ -1,0 +1,5 @@
+{
+  "cmd/agent/main.go": "4d1f7650ca9a86734ca7c310c4fcdf95cd548ee4c19523ea1decc39046540c1a",
+  "config.json": "29d31ee24c86a59e2e2552111b1c7031bf43b026521181cdaa07fc18a4892894",
+  "internal/fim/checker.go": "c49d57ed714fe522e62c92aca14ec575388e83133994f59d28e9ac661b594980"
+}
